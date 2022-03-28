@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    
+    <script src="java.js" defer></script>
+    <link href="css.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    
+
+    
+
+
+
+
+    <div data-poke-card class="poke-card">
+       
+    <input type="text" placeholder="nombre del pokemon" id="Pokename" name="Pokename">
+
+        <div data-poke-name>Pokedex</div>
+        
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" id="poke-img" src="imagenes/Pokeball.png"/>
+        </div>
+
+
+        <p id="id" class="id"> # </p> 
+        <p id="nombre" class="nombre"> </p> 
+
+        <p id="tipo"> </p>
+
+   
+
+    
+
+    
+
+    <div id="estadisticas" class="estadisticas"> <b>  Estadísticas: </b>
+    <p id="salud"> </p>
+    <p id="ataque"> </p>
+    <p id="defensa"> </p>
+    <p id="ataqueEsp"> </p>
+    <p id="defensaEsp"> </p>
+    <p id="velocidad"> </p>
+    </div>
+
+
+    
+    <p id="habilidades"  class="habilidades"> <b>  Habilidades </b>  </p> 
+    <p  class="movimientos"> <b>Movimientos</b>  </p> <br> <p id="movimientos"></p>
+
+    <button onclick="fetchPokemon()">Buscar pokemon</button><br>
+    </div>
+
+
+
+
+
+
+    
+</body>
+
+
+</html>

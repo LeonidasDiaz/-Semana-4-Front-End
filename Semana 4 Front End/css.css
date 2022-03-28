@@ -1,0 +1,91 @@
+body {
+
+   background-color: red;
+}
+
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 800px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 1px solid black;
+    
+}
+
+.poke-card::before {
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: -1;
+}
+
+
+.img-container {
+    position: relative;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.poke-img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+
+
+.habilidades {
+    width: 33%;
+    height: 10%;
+    left: 2%;
+    top:10%;
+    background-color: white;
+    color: black;
+    padding: 2px;
+    display: block;
+    position: absolute;
+
+}
+
+
+.movimientos {
+    width: 34%;
+    height: 10%;
+    display: block;
+    position: absolute;
+    left: 2%;
+    top:50%;
+   
+    color: rgb(0, 0, 0);
+    
+    padding: 2px;
+   
+   
+    overflow-x: hidden;
+   
+}
+.estadisticas {
+    width: 33%;
+    height: 13%;
+    left: 65%;
+    top:10%;
+    border-radius: 5%;
+    color: black;
+    
+    padding: 2px;
+    display: block;
+    position: absolute;
+}
